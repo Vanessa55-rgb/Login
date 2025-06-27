@@ -21,7 +21,7 @@ LOGIN/
 
 Puedes ver el proyecto desplegado en **GitHub Pages** aquí:
 
-👉 [Ver Demo](https://vanessa55-rgb.github.io/Entrenamiento-MOD3_SEM2/)
+👉 [Ver Demo]( https://vanessa55-rgb.github.io/Login/)
 
 ## 🚀 Cómo usarlo
 
