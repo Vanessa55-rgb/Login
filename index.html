@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Usuarios</title>
+  <link rel="shortcut icon" href="https://img.freepik.com/vector-gratis/circulo-azul-usuario-blanco_78370-4707.jpg?semt=ais_items_boosted&w=740" type="image/x-icon">
+  <link rel="stylesheet" href="./css/style.css" />
+</head>
+<body>
+  <div class="card">
+    <div class="tab-buttons">
+      <button onclick="showForm('login')">Iniciar sesión</button>
+      <button onclick="showForm('register')">Registrar</button>
+      <button onclick="showForm('update')">Actualizar</button>
+      <button onclick="showForm('delete')">Eliminar</button>
+    </div>
+
+    <!-- LOGIN -->
+    <form id="login" class="tab-form">
+      <h2>Iniciar sesión</h2>
+      <input type="text" id="username" placeholder="Usuario" required>
+      <input type="password" id="password" placeholder="Contraseña" required>
+      <div class="box visible">
+        <input type="checkbox" id="visible">
+        <label for="visible">Mostrar contraseña</label>
+      </div>
+      <button type="submit" id="submit">Entrar</button>
+    </form>
+
+    <!-- REGISTRAR -->
+    <form id="register" class="tab-form hidden">
+      <h2>Registrar usuario</h2>
+      <input type="text" id="new-username" placeholder="Nuevo usuario" required>
+      <input type="password" id="new-password" placeholder="Nueva contraseña" required>
+      <button type="submit">Registrar</button>
+    </form>
+
+    <!-- ACTUALIZAR -->
+    <form id="update" class="tab-form hidden">
+      <h2>Actualizar usuario</h2>
+      <input type="text" id="old-username" placeholder="Usuario actual" required>
+      <input type="text" id="updated-username" placeholder="Nuevo usuario">
+      <input type="password" id="updated-password" placeholder="Nueva contraseña">
+      <button type="submit">Actualizar</button>
+    </form>
+
+    <!-- ELIMINAR -->
+    <form id="delete" class="tab-form hidden">
+      <h2>Eliminar usuario</h2>
+      <input type="text" id="delete-username" placeholder="Usuario a eliminar" required>
+      <button type="submit">Eliminar</button>
+    </form>
+  </div>
+
+  <script src="./js/login.js"></script>
+</body>
+</html>
